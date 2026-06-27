@@ -1,0 +1,18 @@
+[Unit]
+Description=Telegram File Share and Auto Repost Bot
+After=network-online.target mongodb.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/botfather-repost
+EnvironmentFile=/home/ubuntu/botfather-repost/.env
+ExecStart=/home/ubuntu/botfather-repost/venv/bin/python /home/ubuntu/botfather-repost/main.py
+Restart=on-failure
+RestartSec=10
+TimeoutStopSec=30
+
+[Install]
+WantedBy=multi-user.target
+
