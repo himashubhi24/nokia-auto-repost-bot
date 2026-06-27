@@ -35,10 +35,10 @@ def get_int_list(name, default=""):
 
 
 # Telegram credentials. Keep these in environment variables, never in commits.
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN") or os.environ.get("BOT_TOKEN", "")
-APP_ID = get_int("APP_ID")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN") or os.environ.get("BOT_TOKEN", "7567606108:AAF9XWpdBlezAknXNQc5VxeNgt2DKIb-yaA")
+APP_ID = get_int("29707337")
 API_HASH = os.environ.get("API_HASH", "")
-SESSION_STRING = os.environ.get("SESSION_STRING", "")
+SESSION_STRING = os.environ.get("SESSION_STRING", "a5277e625ace9924e1aedc0bd0800da4")
 
 # Storage / database.
 CHANNEL_ID = get_int("CHANNEL_ID", "-1002086919404")
